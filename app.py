@@ -77,6 +77,9 @@ st.markdown("""---""")
 
 st.write(f"Based on your selection of Passenger counts: {Passenger_count}, Year: {Year}, Month: {Month} , Day: {Day},Hour : {Hour},Minutes :{Minutes} , Distance Travelled : {Distance_travelled},Quater :{Quater} and Weekend : {Weekend_No_Weekend}")
 
+st.markdown("""---""")
+
+if (st.button("Calculate Fares")):
 
 # fitting the model
 values = np.array([Passenger_count, Year, Month, Day, Hour, Minutes , Distance_travelled, Quater,Weekend_No_Weekend]).reshape(1,-1)
