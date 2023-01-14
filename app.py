@@ -66,7 +66,7 @@ with col10:
     Distance_travelled = st.slider("Enter your distance of jounery(in kilometers)",min_value=1.0,max_value=100.0,step=0.5)
 
 with col12:
-    Weekend_No_Weekend =  st.checkbox("Does your journey is on weekend/weekdays ")
+    Weekend_No_Weekend =  st.selectbox("Does your journey is on weekend/weekdays ",[1,0])
 
 col13, col14, col15 = st.columns([8,2,8])
 
