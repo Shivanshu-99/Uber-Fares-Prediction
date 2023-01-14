@@ -39,18 +39,18 @@ st.subheader("Please provide your inputs")
 col1, col2, col3 = st.columns([8,2,8])
 
 with col1:
-     Passenger_count = st.selectbox("Enter No. of Passengers Travelling",[1,2,3,4,5,6])
+     Passenger_count = st.number_input("Enter No. of Passengers Travelling")
 
 with col3:
-    Year = st.selectbox("Enter your  year of Journey",[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022])
+    Year = st.number_input("Enter your  year of Journey")
 
 col4, col5, col6 = st.columns([8,2,8])
 
 with col4:
-    Month = st.selectbox("Enter the month of Journey",[1,2,3,4,5,6,7,8,9,10,11,12])
+    Month = st.number_input("Enter the month of Journey")
 
 with col6:
-    Day = st.slider("Enter the day of Journey", min_value=1, max_value=30)
+    Day = st.number_input("Enter the day of Journey")
 
 col7, col8, col9 = st.columns([8,2,8])
 
@@ -63,10 +63,10 @@ with col9:
 col10, col11 ,col12 = st.columns([8,2,8])
 
 with col10:
-    Distance_travelled = st.slider("Enter your distance of jounery(in kilometers)",min_value=1.0,max_value=100.0,step=0.5)
+    Distance_travelled = st.number_input("Enter your distance of jounery(in kilometers)")
 
 with col12:
-    Weekend_No_Weekend =  st.selectbox("Does your journey is on weekend/weekdays ",[1,0])
+    Weekend_No_Weekend =  st.number_input("Is your journey on weekend?(0=NO , 1=Yes) ")
 
 col13, col14, col15 = st.columns([8,2,8])
 
