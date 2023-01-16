@@ -12,7 +12,7 @@ st.sidebar.header('Please select the information of the journey')
 
 #function for input
 def user_report():
-    passenger_count = st.sidebar.number_input('Passenger Count',1,10,1)
+    passenger_count = st.sidebar.number_input('Passenger Count',min_vaalue=1,max_value=6,step=1)
     year = st.sidebar.number_input('year of journey',min_value=2009,max_value=2050,step=1)
     month = st.sidebar.number_input('month of journey',1,12,1)
     day = st.sidebar.number_input('day of journey',1,30,1)
@@ -20,7 +20,7 @@ def user_report():
     quarter = st.sidebar.number_input('quarter of journey',1,4,1)
     hour = st.sidebar.number_input('hour of journey',0,23,1)
     mins = st.sidebar.number_input('minutes of journey',0,59,1)
-    distance_travelled = st.sidebar.number_input('distance  of journey',min_value=1.0,max_value=100.0,step=0.5) 
+    distance_travelled = st.sidebar.number_input('distance  of journey(In Kilometers)',min_value=1.0,max_value=100.0,step=0.5) 
 
 
     user_report_data={
