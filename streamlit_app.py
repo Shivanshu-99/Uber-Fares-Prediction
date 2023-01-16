@@ -12,7 +12,7 @@ st.sidebar.header('Please select the information of the journey')
 
 #function for input
 def user_report():
-    passenger_count = st.sidebar.number_input('Passenger Count',min_vaalue=1,max_value=6,step=1)
+    passenger_count = st.sidebar.number_input('Passenger Count',min_value=1,max_value=6,step=1)
     year = st.sidebar.number_input('year of journey',min_value=2009,max_value=2050,step=1)
     month = st.sidebar.number_input('month of journey',1,12,1)
     day = st.sidebar.number_input('day of journey',1,30,1)
