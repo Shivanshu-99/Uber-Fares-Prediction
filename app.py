@@ -63,7 +63,7 @@ with col9:
 col10, col11 ,col12 = st.columns([8,2,8])
 
 with col10:
-    Distance_travelled = st.number_input("Enter your distance of jounery(in kilometers)")
+    Distance_travelled = st.number_input("Enter your distance of jounery(in kilometers)",min_value=0,step=0.5)
 
 with col12:
     Weekend_No_Weekend =  st.number_input("Does your journey is on weekend?(0=NO,1=Yes)",min_value=0,max_value=1,step=1)
